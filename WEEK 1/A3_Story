@@ -1,0 +1,32 @@
+# let the user know what's going on
+print ("Your Camping Trip")
+print ("Answer the questions below to play.")
+print ("-----------------------------------")
+
+# variables containing all of your story info
+name1 = raw_input("Enter your name: ")
+name2 = raw_input("Enter your friend's name: ")
+location1 = raw_input("Enter a national park: ")
+vehicle1 = raw_input("Enter a vehicle1: ")
+number1 = raw_input("Enter a number (larger than 1) for your travel time: ")
+adjective1 = raw_input("Enter an adjective of the weather: ")
+location2 = raw_input("Choose lake or tree: ")
+food1 = raw_input("What's your favoriate vegetable? ")
+food2 = raw_input("What's your favoriate meat? ")
+food3 = raw_input("Name an animal you hunt? ")
+animal1 = raw_input("Name a wild animal: ")
+
+# this is the story. it is made up of strings and variables.
+# the \ at the end of each line let's the computer know our string is a long one
+# (a whole paragraph!) and we want to continue more code on the next line. 
+# play close attention to the syntax!
+
+story = "Over Spring break " + name1 + " and " + name2 + " went on a camping trip at " + location1 + ". " \
+"It took them " + number1 + " hours by " + vehicle1 + " to get to destination. " \
+"The weather was " + adjective1 + ". " \
+"They decided to camp around a " + location2 + " where they will spend the night. " \
+"Later on, " + name2 + " started to prepare hotpot for dinner with corn, " + food1 + ", " + food2 + " and onion in a " + food3 + " broth. " \
+"They have a beautiful and relaxing night. However, they woke up in shock seeing a " + animal1 + " outside their tent."
+
+# finally we print the story
+print (story)
