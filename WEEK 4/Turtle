@@ -1,0 +1,79 @@
+from turtle import *
+import random
+
+speed(0)
+colormode(255)
+bgcolor('black')
+
+blue1 = 175, 248, 255
+blue2 = 161, 189, 255
+blue3 = 91, 113, 255
+blue4 = 159, 126, 255 
+blue5 = 17, 106, 255
+green = 138, 255, 204
+myColors = [blue1, blue2, blue3, blue4, blue5, green]
+
+i = 0
+home()
+
+for i in range(5):
+	pencolor(myColors[i % 4])
+	penup()
+	goto(random.randint(-i-100, i+100 ), random.randint(-300,300))
+	pendown()
+	
+	while i <120:
+	    fd(i + 100)     
+	    rt(61)
+	    fd(i + 100) 
+	    rt(61)
+	    fd(i + 100)
+	    rt(61)
+	    fd(i + 100) 
+	    rt(61)
+	    fd(i + 100) 
+	    rt(61)
+	    fd(i + 100) 
+	    rt(61)
+	    i = i+8
+
+done()
+Raw
+ W4_Turtle2
+from turtle import *
+import random
+
+speed(0)
+colormode(255)
+bgcolor('black')
+
+blue1 = 175, 248, 255
+blue2 = 161, 189, 255
+blue3 = 91, 113, 255
+blue4 = 159, 126, 255 
+green = 138, 255, 204
+myColors = [blue1, blue2, blue3, blue4, green]
+
+for i in range(10):
+	pencolor(myColors[i % 5])
+	penup()
+	goto(random.randint(-600, 600), random.randint(-500, 500))
+	pendown()
+	
+	i = 0
+	while i <120:
+	    fd(100)     
+	    rt(61)
+	    fd(100) 
+	    rt(61)
+	    fd(100)
+	    rt(61)
+	    fd(100) 
+	    rt(61)
+	    fd(100) 
+	    rt(61)
+	    fd(100) 
+	    rt(61)
+	    i = i + 9
+
+done()
