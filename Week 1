@@ -1,4 +1,0 @@
-myKeys = ["Apartment" , "Mailbox" , "Laundry Room" , "Storage Drawer"] #[Array] Places the keys on my keychain can open 
-myWindow = True #[Boolean] The window is closed, not opened
-Postit = 17 #[Number] Numbers of post-in notes on my wall
-Christmas = "December 25, 2017" #[String] The day we celebrate Christmas holiday
