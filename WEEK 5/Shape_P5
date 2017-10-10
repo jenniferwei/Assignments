@@ -1,0 +1,21 @@
+var serial; // variable to hold an instance of the serialport library
+var portName = '/dev/cu.usbmodem1421';  // fill in your serial port name here
+var inData;
+
+function setup(){
+  createCanvas(1500, 1500, WEBGL);
+  serial = new p5.SerialPort(); // make a new instance of the serialport library
+  serial.on('data', serialEvent);     // callback for when new data arrives
+}
+
+function draw(){
+  background('black');
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  box(200, inData, inData * 2);
+}
+
+function serialEvent() {
+  // retreive value from serial port
+  inData = Number(serial.read());
+}
